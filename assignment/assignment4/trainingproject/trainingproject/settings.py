@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'a1b2(+mao9g2ofhks#)s!+i0v1y-mrshvc9^3_yb7h3)75kdc2'
+SECRET_KEY = '1bcfpx^zx59-e5xrw=pb14_gm@q%6b!g06i^xk2h*yjmv!&k08'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts.apps.AccountsConfig',
+    'trainingapp.apps.TrainingappConfig',
+    
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'trainingproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'accounts/templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
 	    ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -120,5 +121,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-
-LOGIN_REDIRECT_URL = '/account/'
