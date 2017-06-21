@@ -3,5 +3,5 @@ from __future__ import unicode_literals
 from django.apps import AppConfig
 
 
-class TrainingappConfig(AppConfig):
-    name = 'trainingapp'
+class AccountsConfig(AppConfig):
+    name = 'accounts'
